@@ -1,0 +1,5 @@
+FROM ${BASE_IMAGE_NODE}
+WORKDIR ${WORK_DIR_NODE}
+COPY . ${WORK_DIR_NODE}
+RUN npm install
+CMD "npm" "start"
